@@ -19,6 +19,8 @@
 		EF1B38EC297088BC001A18EC /* KoHo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF1B38EB297088BC001A18EC /* KoHo-Regular.ttf */; };
 		EF1B38ED297088BC001A18EC /* KoHo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF1B38EB297088BC001A18EC /* KoHo-Regular.ttf */; };
 		EF1B38EE297088BC001A18EC /* KoHo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF1B38EB297088BC001A18EC /* KoHo-Regular.ttf */; };
+		EF9004D32975E180006EDD63 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9004D12975E180006EDD63 /* Inter-Regular.ttf */; };
+		EF9004D42975E180006EDD63 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9004D22975E180006EDD63 /* Inter-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		EF1B38DB297074F9001A18EC /* Fliqs_MoviesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fliqs_MoviesAppUITests.swift; sourceTree = "<group>"; };
 		EF1B38DD297074F9001A18EC /* Fliqs_MoviesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fliqs_MoviesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EF1B38EB297088BC001A18EC /* KoHo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KoHo-Regular.ttf"; sourceTree = "<group>"; };
+		EF9004D12975E180006EDD63 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		EF9004D22975E180006EDD63 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				EF1B38EB297088BC001A18EC /* KoHo-Regular.ttf */,
+				EF9004D22975E180006EDD63 /* Inter-Bold.ttf */,
+				EF9004D12975E180006EDD63 /* Inter-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -244,7 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9004D42975E180006EDD63 /* Inter-Bold.ttf in Resources */,
 				EF1B38EC297088BC001A18EC /* KoHo-Regular.ttf in Resources */,
+				EF9004D32975E180006EDD63 /* Inter-Regular.ttf in Resources */,
 				EF1B38C7297074F9001A18EC /* LaunchScreen.storyboard in Resources */,
 				EF1B38C4297074F9001A18EC /* Assets.xcassets in Resources */,
 				EF1B38C2297074F3001A18EC /* Main.storyboard in Resources */,

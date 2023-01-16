@@ -25,7 +25,7 @@
                                 <rect key="frame" x="-75" y="191.5" width="564" height="423"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLIQS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfb-qg-xXD">
-                                <rect key="frame" x="139" y="503" width="136" height="65"/>
+                                <rect key="frame" x="139.5" y="503" width="135.5" height="65"/>
                                 <fontDescription key="fontDescription" name="KoHo-Regular" family="KoHo" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
