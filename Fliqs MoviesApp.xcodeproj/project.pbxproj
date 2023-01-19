@@ -22,6 +22,7 @@
 		EF9004D42975E180006EDD63 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9004D22975E180006EDD63 /* Inter-Bold.ttf */; };
 		EF9004D92975EF4E006EDD63 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004D82975EF4E006EDD63 /* OnboardingVC.swift */; };
 		EF9004DC2979B709006EDD63 /* UiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004DB2979B709006EDD63 /* UiView.swift */; };
+		EF9004DF2979C6D2006EDD63 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004DE2979C6D2006EDD63 /* OnboardingSlide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		EF9004D22975E180006EDD63 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		EF9004D82975EF4E006EDD63 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		EF9004DB2979B709006EDD63 /* UiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiView.swift; sourceTree = "<group>"; };
+		EF9004DE2979C6D2006EDD63 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +111,9 @@
 		EF1B38B9297074F3001A18EC /* Fliqs MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
-				EF9004DA2979B6DF006EDD63 /* Extensions */,
 				EF9004D62975EF07006EDD63 /* Screens */,
+				EF9004DD2979C69D006EDD63 /* Models */,
+				EF9004DA2979B6DF006EDD63 /* Extensions */,
 				EF1B38EA29708859001A18EC /* Fonts */,
 				EF1B38BA297074F3001A18EC /* AppDelegate.swift */,
 				EF1B38BC297074F3001A18EC /* SceneDelegate.swift */,
@@ -171,6 +174,14 @@
 				EF9004DB2979B709006EDD63 /* UiView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF9004DD2979C69D006EDD63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF9004DE2979C6D2006EDD63 /* OnboardingSlide.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9004DF2979C6D2006EDD63 /* OnboardingSlide.swift in Sources */,
 				EF9004DC2979B709006EDD63 /* UiView.swift in Sources */,
 				EF9004D92975EF4E006EDD63 /* OnboardingVC.swift in Sources */,
 				EF1B38BB297074F3001A18EC /* AppDelegate.swift in Sources */,
