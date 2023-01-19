@@ -15,7 +15,7 @@ class OnboardingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    @IBAction func getStartedClicked(_ sender: Any) {
+    @IBAction func getStartedClicked(_ sender: UIButton) {
     }
     @IBAction func skipClicked(_ sender: Any) {
     }
