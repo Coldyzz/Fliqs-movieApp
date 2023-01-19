@@ -54,7 +54,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="him-oG-68f">
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="him-oG-68f">
                                 <rect key="frame" x="149" y="715" width="116" height="26"/>
                                 <color key="pageIndicatorTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
@@ -69,6 +69,9 @@
                                     <fontDescription key="titleFontDescription" name="Inter-Bold" family="Inter" pointSize="22"/>
                                     <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="getStartedClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xh-UZ-YdZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAN-BX-0Ru">
                                 <rect key="frame" x="294.5" y="823" width="99.5" height="24.5"/>
@@ -78,6 +81,9 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="1"/>
                                     <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="skipClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y3a-ce-9sS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -86,7 +92,7 @@
                             <constraint firstItem="K4G-Wz-FWl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5Xj-om-Ocz"/>
                             <constraint firstItem="oAN-BX-0Ru" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.24" id="V3k-GC-7X4"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Yhk-rW-RTg" secondAttribute="bottom" constant="55" id="WvF-ya-VhS"/>
-                            <constraint firstItem="Yhk-rW-RTg" firstAttribute="top" relation="lessThanOrEqual" secondItem="him-oG-68f" secondAttribute="bottom" constant="11" id="ZCC-PA-GK0"/>
+                            <constraint firstItem="Yhk-rW-RTg" firstAttribute="top" secondItem="him-oG-68f" secondAttribute="bottom" constant="11" id="ZCC-PA-GK0"/>
                             <constraint firstItem="Yhk-rW-RTg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cNp-An-RZd"/>
                             <constraint firstItem="K4G-Wz-FWl" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.78" id="dVj-Ec-cTr"/>
                             <constraint firstItem="him-oG-68f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jLo-he-lHh"/>
@@ -98,6 +104,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A8P-jT-U1n"/>
+                    <connections>
+                        <outlet property="collectionView" destination="K4G-Wz-FWl" id="ZOD-9C-ghw"/>
+                        <outlet property="getStartedButton" destination="Yhk-rW-RTg" id="CwD-cd-W25"/>
+                        <outlet property="pageControl" destination="him-oG-68f" id="6Bs-lx-B9X"/>
+                        <outlet property="skipButton" destination="oAN-BX-0Ru" id="8Cc-lY-VJz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
