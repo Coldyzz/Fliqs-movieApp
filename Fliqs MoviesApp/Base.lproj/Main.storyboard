@@ -9,6 +9,14 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="1s1-Hs-LBg">
@@ -36,21 +44,55 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="K4G-Wz-FWl">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="699"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hZd-AD-dlH">
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rpr-Qp-VhJ">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CuU-Kr-Mle">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="onboardingCollectionViewCell" id="CuU-Kr-Mle" customClass="OnboardingCollectionViewCell" customModule="Fliqs_MoviesApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="413" height="611"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="efX-Ll-qWK">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="efX-Ll-qWK">
+                                            <rect key="frame" x="0.0" y="0.0" width="413" height="611"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XhQ-IQ-RxS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="413" height="611"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fliqs" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFP-0J-RzV">
+                                                    <rect key="frame" x="39.5" y="514.5" width="334" height="48.5"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="40"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best movie streaming app of the country to make your days greatfull" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H88-gG-NtX">
+                                                    <rect key="frame" x="-52" y="587" width="517" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="15"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="XhQ-IQ-RxS" secondAttribute="bottom" id="6aa-7k-q0l"/>
+                                                <constraint firstItem="H88-gG-NtX" firstAttribute="top" secondItem="XhQ-IQ-RxS" secondAttribute="bottom" constant="-24" id="Gnp-21-8JA"/>
+                                                <constraint firstItem="H88-gG-NtX" firstAttribute="centerX" secondItem="efX-Ll-qWK" secondAttribute="centerX" id="QUQ-My-N9f"/>
+                                                <constraint firstItem="H88-gG-NtX" firstAttribute="top" secondItem="hFP-0J-RzV" secondAttribute="bottom" constant="24" id="YGZ-2g-lbv"/>
+                                                <constraint firstAttribute="trailing" secondItem="XhQ-IQ-RxS" secondAttribute="trailing" id="YN6-RI-6Lj"/>
+                                                <constraint firstItem="hFP-0J-RzV" firstAttribute="centerX" secondItem="efX-Ll-qWK" secondAttribute="centerX" id="ixH-fA-LAv"/>
+                                                <constraint firstItem="XhQ-IQ-RxS" firstAttribute="leading" secondItem="efX-Ll-qWK" secondAttribute="leading" id="nFU-aQ-ZeI"/>
+                                                <constraint firstItem="XhQ-IQ-RxS" firstAttribute="top" secondItem="efX-Ll-qWK" secondAttribute="top" id="sua-eh-ETc"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <size key="customSize" width="413" height="611"/>
+                                        <connections>
+                                            <outlet property="slideDescriptionLabel" destination="H88-gG-NtX" id="g78-Z0-wEY"/>
+                                            <outlet property="slideImage" destination="XhQ-IQ-RxS" id="LEI-9t-XTN"/>
+                                            <outlet property="slideTitleLabel" destination="hFP-0J-RzV" id="PfH-te-z7Y"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -67,7 +109,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Get Started">
                                     <fontDescription key="titleFontDescription" name="Inter-Bold" family="Inter" pointSize="22"/>
-                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -127,9 +169,6 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
