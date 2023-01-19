@@ -21,6 +21,7 @@
 		EF9004D32975E180006EDD63 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9004D12975E180006EDD63 /* Inter-Regular.ttf */; };
 		EF9004D42975E180006EDD63 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF9004D22975E180006EDD63 /* Inter-Bold.ttf */; };
 		EF9004D92975EF4E006EDD63 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004D82975EF4E006EDD63 /* OnboardingVC.swift */; };
+		EF9004DC2979B709006EDD63 /* UiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004DB2979B709006EDD63 /* UiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		EF9004D12975E180006EDD63 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		EF9004D22975E180006EDD63 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		EF9004D82975EF4E006EDD63 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		EF9004DB2979B709006EDD63 /* UiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		EF1B38B9297074F3001A18EC /* Fliqs MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				EF9004DA2979B6DF006EDD63 /* Extensions */,
 				EF9004D62975EF07006EDD63 /* Screens */,
 				EF1B38EA29708859001A18EC /* Fonts */,
 				EF1B38BA297074F3001A18EC /* AppDelegate.swift */,
@@ -160,6 +163,14 @@
 				EF9004D82975EF4E006EDD63 /* OnboardingVC.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EF9004DA2979B6DF006EDD63 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF9004DB2979B709006EDD63 /* UiView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9004DC2979B709006EDD63 /* UiView.swift in Sources */,
 				EF9004D92975EF4E006EDD63 /* OnboardingVC.swift in Sources */,
 				EF1B38BB297074F3001A18EC /* AppDelegate.swift in Sources */,
 				EF1B38BD297074F3001A18EC /* SceneDelegate.swift in Sources */,
