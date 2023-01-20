@@ -29,6 +29,9 @@ class OnboardingVC: UIViewController {
                                   image: UIImage(named: "OnboardingSlide")!)]
     }
     @IBAction func getStartedClicked(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "SignUpVC", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "signUpVC")
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     @IBAction func skipClicked(_ sender: Any) {
     }

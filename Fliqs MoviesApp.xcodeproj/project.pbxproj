@@ -24,8 +24,8 @@
 		EF9004DC2979B709006EDD63 /* UiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004DB2979B709006EDD63 /* UiView.swift */; };
 		EF9004DF2979C6D2006EDD63 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004DE2979C6D2006EDD63 /* OnboardingSlide.swift */; };
 		EF9004E12979F86A006EDD63 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004E02979F86A006EDD63 /* OnboardingCollectionViewCell.swift */; };
-		EF9004E6297B29B1006EDD63 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9004E4297B29B1006EDD63 /* SignUpVC.xib */; };
 		EF9004E7297B29B1006EDD63 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9004E5297B29B1006EDD63 /* SignUpVC.swift */; };
+		EF9004E9297B3216006EDD63 /* SignUpVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9004E8297B3216006EDD63 /* SignUpVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 		EF9004DB2979B709006EDD63 /* UiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiView.swift; sourceTree = "<group>"; };
 		EF9004DE2979C6D2006EDD63 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		EF9004E02979F86A006EDD63 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
-		EF9004E4297B29B1006EDD63 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		EF9004E5297B29B1006EDD63 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		EF9004E8297B3216006EDD63 /* SignUpVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +196,8 @@
 		EF9004E2297B288E006EDD63 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				EF9004E4297B29B1006EDD63 /* SignUpVC.xib */,
 				EF9004E5297B29B1006EDD63 /* SignUpVC.swift */,
+				EF9004E8297B3216006EDD63 /* SignUpVC.storyboard */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -314,8 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9004D42975E180006EDD63 /* Inter-Bold.ttf in Resources */,
+				EF9004E9297B3216006EDD63 /* SignUpVC.storyboard in Resources */,
 				EF1B38EC297088BC001A18EC /* KoHo-Regular.ttf in Resources */,
-				EF9004E6297B29B1006EDD63 /* SignUpVC.xib in Resources */,
 				EF9004D32975E180006EDD63 /* Inter-Regular.ttf in Resources */,
 				EF1B38C7297074F9001A18EC /* LaunchScreen.storyboard in Resources */,
 				EF1B38C4297074F9001A18EC /* Assets.xcassets in Resources */,
