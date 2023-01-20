@@ -20,13 +20,13 @@ class OnboardingVC: UIViewController {
         collectionView.dataSource = self
         slides = [OnboardingSlide(title: "Welcome to Fliqs",
                                   description: "The best movie streaming app of the country to make your days greatfull",
-                                  image: UIImage(named: "LogoApp")!),
+                                  image: UIImage(named: "OnboardingSlide")!),
                   OnboardingSlide(title: "Enjoy Your Movies",
                                   description: "The best movie streaming app of the country to make your days greatfull",
-                                  image: UIImage(named: "LogoApp")!),
+                                  image: UIImage(named: "LaunchLogo")!),
                   OnboardingSlide(title: "Enjoy Your Movies",
                                   description: "The best movie streaming app of the country to make your days greatfull",
-                                  image: UIImage(named: "LogoApp")!)]
+                                  image: UIImage(named: "OnboardingSlide")!)]
     }
     @IBAction func getStartedClicked(_ sender: UIButton) {
     }
