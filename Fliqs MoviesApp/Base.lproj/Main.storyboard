@@ -97,14 +97,14 @@
                                 </cells>
                             </collectionView>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="him-oG-68f">
-                                <rect key="frame" x="149" y="715" width="116" height="26"/>
+                                <rect key="frame" x="149" y="720" width="116" height="26"/>
                                 <color key="pageIndicatorTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhk-rW-RTg">
-                                <rect key="frame" x="20" y="752" width="374" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhk-rW-RTg">
+                                <rect key="frame" x="20" y="752" width="374" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="lcX-QX-FLl"/>
+                                    <constraint firstAttribute="height" constant="50" id="lcX-QX-FLl"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Get Started">
